@@ -1,4 +1,4 @@
-module github.com/abusizhishen/dlang
+module github.com/abusizhishen/jsonParser
 
 go 1.15
 

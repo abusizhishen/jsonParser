@@ -1,6 +1,6 @@
 // Code generated from Json.g4 by ANTLR 4.7.2. DO NOT EDIT.
 
-package parser // Json
+package json // Json
 
 import "github.com/antlr/antlr4/runtime/Go/antlr"
 
