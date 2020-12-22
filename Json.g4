@@ -11,18 +11,16 @@ value :Int
       |Str
       |array
       |object
-       ;
+;
 
-keyValue:Str ':' value;
+pair: Str ':' value;
 
-object : '{}'
-    |'{'keyValue'}'
-    |'{'keyValue','keyValue+'}'
-    ;
+object : '{' '}'
+    |'{'pair(','pair)*'}'
+;
 
-array:'[]'
-    |'[' value ']'
-    |'[' value+ ']'
+array:'[' ']'
+    |'[' value (','value)*']'
     ;
 
 init : array

@@ -1,6 +1,6 @@
-// Code generated from Json.g4 by ANTLR 4.7.2. DO NOT EDIT.
+// Code generated from Json.g4 by ANTLR 4.8. DO NOT EDIT.
 
-package json // Json
+package parser // Json
 
 import "github.com/antlr/antlr4/runtime/Go/antlr"
 
@@ -27,11 +27,11 @@ func (s *BaseJsonListener) EnterValue(ctx *ValueContext) {}
 // ExitValue is called when production value is exited.
 func (s *BaseJsonListener) ExitValue(ctx *ValueContext) {}
 
-// EnterKeyValue is called when production keyValue is entered.
-func (s *BaseJsonListener) EnterKeyValue(ctx *KeyValueContext) {}
+// EnterPair is called when production pair is entered.
+func (s *BaseJsonListener) EnterPair(ctx *PairContext) {}
 
-// ExitKeyValue is called when production keyValue is exited.
-func (s *BaseJsonListener) ExitKeyValue(ctx *KeyValueContext) {}
+// ExitPair is called when production pair is exited.
+func (s *BaseJsonListener) ExitPair(ctx *PairContext) {}
 
 // EnterObject is called when production object is entered.
 func (s *BaseJsonListener) EnterObject(ctx *ObjectContext) {}

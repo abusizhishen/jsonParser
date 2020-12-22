@@ -1,6 +1,6 @@
-// Code generated from Json.g4 by ANTLR 4.7.2. DO NOT EDIT.
+// Code generated from Json.g4 by ANTLR 4.8. DO NOT EDIT.
 
-package json // Json
+package parser // Json
 
 import (
 	"fmt"
@@ -16,44 +16,43 @@ var _ = reflect.Copy
 var _ = strconv.Itoa
 
 var parserATN = []uint16{
-	3, 24715, 42794, 33075, 47597, 16764, 15335, 30598, 22884, 3, 15, 60, 4,
+	3, 24715, 42794, 33075, 47597, 16764, 15335, 30598, 22884, 3, 13, 58, 4,
 	2, 9, 2, 4, 3, 9, 3, 4, 4, 9, 4, 4, 5, 9, 5, 4, 6, 9, 6, 3, 2, 3, 2, 3,
 	2, 3, 2, 3, 2, 5, 2, 18, 10, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 3, 4, 3,
-	4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 3, 4, 6, 4, 33, 10, 4, 13, 4, 14, 4, 34,
-	3, 4, 3, 4, 5, 4, 39, 10, 4, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5,
-	6, 5, 48, 10, 5, 13, 5, 14, 5, 49, 3, 5, 3, 5, 5, 5, 54, 10, 5, 3, 6, 3,
-	6, 5, 6, 58, 10, 6, 3, 6, 2, 2, 7, 2, 4, 6, 8, 10, 2, 2, 2, 65, 2, 17,
-	3, 2, 2, 2, 4, 19, 3, 2, 2, 2, 6, 38, 3, 2, 2, 2, 8, 53, 3, 2, 2, 2, 10,
-	57, 3, 2, 2, 2, 12, 18, 7, 14, 2, 2, 13, 18, 7, 12, 2, 2, 14, 18, 7, 13,
-	2, 2, 15, 18, 5, 8, 5, 2, 16, 18, 5, 6, 4, 2, 17, 12, 3, 2, 2, 2, 17, 13,
-	3, 2, 2, 2, 17, 14, 3, 2, 2, 2, 17, 15, 3, 2, 2, 2, 17, 16, 3, 2, 2, 2,
-	18, 3, 3, 2, 2, 2, 19, 20, 7, 13, 2, 2, 20, 21, 7, 3, 2, 2, 21, 22, 5,
-	2, 2, 2, 22, 5, 3, 2, 2, 2, 23, 39, 7, 4, 2, 2, 24, 25, 7, 5, 2, 2, 25,
-	26, 5, 4, 3, 2, 26, 27, 7, 6, 2, 2, 27, 39, 3, 2, 2, 2, 28, 29, 7, 5, 2,
-	2, 29, 30, 5, 4, 3, 2, 30, 32, 7, 7, 2, 2, 31, 33, 5, 4, 3, 2, 32, 31,
-	3, 2, 2, 2, 33, 34, 3, 2, 2, 2, 34, 32, 3, 2, 2, 2, 34, 35, 3, 2, 2, 2,
-	35, 36, 3, 2, 2, 2, 36, 37, 7, 6, 2, 2, 37, 39, 3, 2, 2, 2, 38, 23, 3,
-	2, 2, 2, 38, 24, 3, 2, 2, 2, 38, 28, 3, 2, 2, 2, 39, 7, 3, 2, 2, 2, 40,
-	54, 7, 8, 2, 2, 41, 42, 7, 9, 2, 2, 42, 43, 5, 2, 2, 2, 43, 44, 7, 10,
-	2, 2, 44, 54, 3, 2, 2, 2, 45, 47, 7, 9, 2, 2, 46, 48, 5, 2, 2, 2, 47, 46,
-	3, 2, 2, 2, 48, 49, 3, 2, 2, 2, 49, 47, 3, 2, 2, 2, 49, 50, 3, 2, 2, 2,
-	50, 51, 3, 2, 2, 2, 51, 52, 7, 10, 2, 2, 52, 54, 3, 2, 2, 2, 53, 40, 3,
-	2, 2, 2, 53, 41, 3, 2, 2, 2, 53, 45, 3, 2, 2, 2, 54, 9, 3, 2, 2, 2, 55,
-	58, 5, 8, 5, 2, 56, 58, 5, 6, 4, 2, 57, 55, 3, 2, 2, 2, 57, 56, 3, 2, 2,
-	2, 58, 11, 3, 2, 2, 2, 8, 17, 34, 38, 49, 53, 57,
+	4, 3, 4, 3, 4, 3, 4, 7, 4, 30, 10, 4, 12, 4, 14, 4, 33, 11, 4, 3, 4, 3,
+	4, 5, 4, 37, 10, 4, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 7, 5, 45, 10, 5,
+	12, 5, 14, 5, 48, 11, 5, 3, 5, 3, 5, 5, 5, 52, 10, 5, 3, 6, 3, 6, 5, 6,
+	56, 10, 6, 3, 6, 2, 2, 7, 2, 4, 6, 8, 10, 2, 2, 2, 61, 2, 17, 3, 2, 2,
+	2, 4, 19, 3, 2, 2, 2, 6, 36, 3, 2, 2, 2, 8, 51, 3, 2, 2, 2, 10, 55, 3,
+	2, 2, 2, 12, 18, 7, 12, 2, 2, 13, 18, 7, 10, 2, 2, 14, 18, 7, 11, 2, 2,
+	15, 18, 5, 8, 5, 2, 16, 18, 5, 6, 4, 2, 17, 12, 3, 2, 2, 2, 17, 13, 3,
+	2, 2, 2, 17, 14, 3, 2, 2, 2, 17, 15, 3, 2, 2, 2, 17, 16, 3, 2, 2, 2, 18,
+	3, 3, 2, 2, 2, 19, 20, 7, 11, 2, 2, 20, 21, 7, 3, 2, 2, 21, 22, 5, 2, 2,
+	2, 22, 5, 3, 2, 2, 2, 23, 24, 7, 4, 2, 2, 24, 37, 7, 5, 2, 2, 25, 26, 7,
+	4, 2, 2, 26, 31, 5, 4, 3, 2, 27, 28, 7, 6, 2, 2, 28, 30, 5, 4, 3, 2, 29,
+	27, 3, 2, 2, 2, 30, 33, 3, 2, 2, 2, 31, 29, 3, 2, 2, 2, 31, 32, 3, 2, 2,
+	2, 32, 34, 3, 2, 2, 2, 33, 31, 3, 2, 2, 2, 34, 35, 7, 5, 2, 2, 35, 37,
+	3, 2, 2, 2, 36, 23, 3, 2, 2, 2, 36, 25, 3, 2, 2, 2, 37, 7, 3, 2, 2, 2,
+	38, 39, 7, 7, 2, 2, 39, 52, 7, 8, 2, 2, 40, 41, 7, 7, 2, 2, 41, 46, 5,
+	2, 2, 2, 42, 43, 7, 6, 2, 2, 43, 45, 5, 2, 2, 2, 44, 42, 3, 2, 2, 2, 45,
+	48, 3, 2, 2, 2, 46, 44, 3, 2, 2, 2, 46, 47, 3, 2, 2, 2, 47, 49, 3, 2, 2,
+	2, 48, 46, 3, 2, 2, 2, 49, 50, 7, 8, 2, 2, 50, 52, 3, 2, 2, 2, 51, 38,
+	3, 2, 2, 2, 51, 40, 3, 2, 2, 2, 52, 9, 3, 2, 2, 2, 53, 56, 5, 8, 5, 2,
+	54, 56, 5, 6, 4, 2, 55, 53, 3, 2, 2, 2, 55, 54, 3, 2, 2, 2, 56, 11, 3,
+	2, 2, 2, 8, 17, 31, 36, 46, 51, 55,
 }
 var deserializer = antlr.NewATNDeserializer(nil)
 var deserializedATN = deserializer.DeserializeFromUInt16(parserATN)
 
 var literalNames = []string{
-	"", "':'", "'{}'", "'{'", "'}'", "','", "'[]'", "'['", "']'", "'\"'",
+	"", "':'", "'{'", "'}'", "','", "'['", "']'", "'\"'",
 }
 var symbolicNames = []string{
-	"", "", "", "", "", "", "", "", "", "DQM", "Key", "Str", "Int", "WS",
+	"", "", "", "", "", "", "", "DQM", "Key", "Str", "Int", "WS",
 }
 
 var ruleNames = []string{
-	"value", "keyValue", "object", "array", "init",
+	"value", "pair", "object", "array", "init",
 }
 var decisionToDFA = make([]*antlr.DFA, len(deserializedATN.DecisionToState))
 
@@ -90,22 +89,20 @@ const (
 	JsonParserT__3 = 4
 	JsonParserT__4 = 5
 	JsonParserT__5 = 6
-	JsonParserT__6 = 7
-	JsonParserT__7 = 8
-	JsonParserDQM  = 9
-	JsonParserKey  = 10
-	JsonParserStr  = 11
-	JsonParserInt  = 12
-	JsonParserWS   = 13
+	JsonParserDQM  = 7
+	JsonParserKey  = 8
+	JsonParserStr  = 9
+	JsonParserInt  = 10
+	JsonParserWS   = 11
 )
 
 // JsonParser rules.
 const (
-	JsonParserRULE_value    = 0
-	JsonParserRULE_keyValue = 1
-	JsonParserRULE_object   = 2
-	JsonParserRULE_array    = 3
-	JsonParserRULE_init     = 4
+	JsonParserRULE_value  = 0
+	JsonParserRULE_pair   = 1
+	JsonParserRULE_object = 2
+	JsonParserRULE_array  = 3
+	JsonParserRULE_init   = 4
 )
 
 // IValueContext is an interface to support dynamic dispatch.
@@ -243,14 +240,14 @@ func (p *JsonParser) Value() (localctx IValueContext) {
 			p.Match(JsonParserStr)
 		}
 
-	case JsonParserT__5, JsonParserT__6:
+	case JsonParserT__4:
 		p.EnterOuterAlt(localctx, 4)
 		{
 			p.SetState(13)
 			p.Array()
 		}
 
-	case JsonParserT__1, JsonParserT__2:
+	case JsonParserT__1:
 		p.EnterOuterAlt(localctx, 5)
 		{
 			p.SetState(14)
@@ -264,49 +261,49 @@ func (p *JsonParser) Value() (localctx IValueContext) {
 	return localctx
 }
 
-// IKeyValueContext is an interface to support dynamic dispatch.
-type IKeyValueContext interface {
+// IPairContext is an interface to support dynamic dispatch.
+type IPairContext interface {
 	antlr.ParserRuleContext
 
 	// GetParser returns the parser.
 	GetParser() antlr.Parser
 
-	// IsKeyValueContext differentiates from other interfaces.
-	IsKeyValueContext()
+	// IsPairContext differentiates from other interfaces.
+	IsPairContext()
 }
 
-type KeyValueContext struct {
+type PairContext struct {
 	*antlr.BaseParserRuleContext
 	parser antlr.Parser
 }
 
-func NewEmptyKeyValueContext() *KeyValueContext {
-	var p = new(KeyValueContext)
+func NewEmptyPairContext() *PairContext {
+	var p = new(PairContext)
 	p.BaseParserRuleContext = antlr.NewBaseParserRuleContext(nil, -1)
-	p.RuleIndex = JsonParserRULE_keyValue
+	p.RuleIndex = JsonParserRULE_pair
 	return p
 }
 
-func (*KeyValueContext) IsKeyValueContext() {}
+func (*PairContext) IsPairContext() {}
 
-func NewKeyValueContext(parser antlr.Parser, parent antlr.ParserRuleContext, invokingState int) *KeyValueContext {
-	var p = new(KeyValueContext)
+func NewPairContext(parser antlr.Parser, parent antlr.ParserRuleContext, invokingState int) *PairContext {
+	var p = new(PairContext)
 
 	p.BaseParserRuleContext = antlr.NewBaseParserRuleContext(parent, invokingState)
 
 	p.parser = parser
-	p.RuleIndex = JsonParserRULE_keyValue
+	p.RuleIndex = JsonParserRULE_pair
 
 	return p
 }
 
-func (s *KeyValueContext) GetParser() antlr.Parser { return s.parser }
+func (s *PairContext) GetParser() antlr.Parser { return s.parser }
 
-func (s *KeyValueContext) Str() antlr.TerminalNode {
+func (s *PairContext) Str() antlr.TerminalNode {
 	return s.GetToken(JsonParserStr, 0)
 }
 
-func (s *KeyValueContext) Value() IValueContext {
+func (s *PairContext) Value() IValueContext {
 	var t = s.GetTypedRuleContext(reflect.TypeOf((*IValueContext)(nil)).Elem(), 0)
 
 	if t == nil {
@@ -316,29 +313,29 @@ func (s *KeyValueContext) Value() IValueContext {
 	return t.(IValueContext)
 }
 
-func (s *KeyValueContext) GetRuleContext() antlr.RuleContext {
+func (s *PairContext) GetRuleContext() antlr.RuleContext {
 	return s
 }
 
-func (s *KeyValueContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
+func (s *PairContext) ToStringTree(ruleNames []string, recog antlr.Recognizer) string {
 	return antlr.TreesStringTree(s, ruleNames, recog)
 }
 
-func (s *KeyValueContext) EnterRule(listener antlr.ParseTreeListener) {
+func (s *PairContext) EnterRule(listener antlr.ParseTreeListener) {
 	if listenerT, ok := listener.(JsonListener); ok {
-		listenerT.EnterKeyValue(s)
+		listenerT.EnterPair(s)
 	}
 }
 
-func (s *KeyValueContext) ExitRule(listener antlr.ParseTreeListener) {
+func (s *PairContext) ExitRule(listener antlr.ParseTreeListener) {
 	if listenerT, ok := listener.(JsonListener); ok {
-		listenerT.ExitKeyValue(s)
+		listenerT.ExitPair(s)
 	}
 }
 
-func (p *JsonParser) KeyValue() (localctx IKeyValueContext) {
-	localctx = NewKeyValueContext(p, p.GetParserRuleContext(), p.GetState())
-	p.EnterRule(localctx, 2, JsonParserRULE_keyValue)
+func (p *JsonParser) Pair() (localctx IPairContext) {
+	localctx = NewPairContext(p, p.GetParserRuleContext(), p.GetState())
+	p.EnterRule(localctx, 2, JsonParserRULE_pair)
 
 	defer func() {
 		p.ExitRule()
@@ -411,27 +408,27 @@ func NewObjectContext(parser antlr.Parser, parent antlr.ParserRuleContext, invok
 
 func (s *ObjectContext) GetParser() antlr.Parser { return s.parser }
 
-func (s *ObjectContext) AllKeyValue() []IKeyValueContext {
-	var ts = s.GetTypedRuleContexts(reflect.TypeOf((*IKeyValueContext)(nil)).Elem())
-	var tst = make([]IKeyValueContext, len(ts))
+func (s *ObjectContext) AllPair() []IPairContext {
+	var ts = s.GetTypedRuleContexts(reflect.TypeOf((*IPairContext)(nil)).Elem())
+	var tst = make([]IPairContext, len(ts))
 
 	for i, t := range ts {
 		if t != nil {
-			tst[i] = t.(IKeyValueContext)
+			tst[i] = t.(IPairContext)
 		}
 	}
 
 	return tst
 }
 
-func (s *ObjectContext) KeyValue(i int) IKeyValueContext {
-	var t = s.GetTypedRuleContext(reflect.TypeOf((*IKeyValueContext)(nil)).Elem(), i)
+func (s *ObjectContext) Pair(i int) IPairContext {
+	var t = s.GetTypedRuleContext(reflect.TypeOf((*IPairContext)(nil)).Elem(), i)
 
 	if t == nil {
 		return nil
 	}
 
-	return t.(IKeyValueContext)
+	return t.(IPairContext)
 }
 
 func (s *ObjectContext) GetRuleContext() antlr.RuleContext {
@@ -475,7 +472,7 @@ func (p *JsonParser) Object() (localctx IObjectContext) {
 		}
 	}()
 
-	p.SetState(36)
+	p.SetState(34)
 	p.GetErrorHandler().Sync(p)
 	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 2, p.GetParserRuleContext()) {
 	case 1:
@@ -484,53 +481,42 @@ func (p *JsonParser) Object() (localctx IObjectContext) {
 			p.SetState(21)
 			p.Match(JsonParserT__1)
 		}
-
-	case 2:
-		p.EnterOuterAlt(localctx, 2)
 		{
 			p.SetState(22)
 			p.Match(JsonParserT__2)
 		}
+
+	case 2:
+		p.EnterOuterAlt(localctx, 2)
 		{
 			p.SetState(23)
-			p.KeyValue()
+			p.Match(JsonParserT__1)
 		}
 		{
 			p.SetState(24)
-			p.Match(JsonParserT__3)
+			p.Pair()
 		}
-
-	case 3:
-		p.EnterOuterAlt(localctx, 3)
-		{
-			p.SetState(26)
-			p.Match(JsonParserT__2)
-		}
-		{
-			p.SetState(27)
-			p.KeyValue()
-		}
-		{
-			p.SetState(28)
-			p.Match(JsonParserT__4)
-		}
-		p.SetState(30)
+		p.SetState(29)
 		p.GetErrorHandler().Sync(p)
 		_la = p.GetTokenStream().LA(1)
 
-		for ok := true; ok; ok = _la == JsonParserStr {
+		for _la == JsonParserT__3 {
 			{
-				p.SetState(29)
-				p.KeyValue()
+				p.SetState(25)
+				p.Match(JsonParserT__3)
+			}
+			{
+				p.SetState(26)
+				p.Pair()
 			}
 
-			p.SetState(32)
+			p.SetState(31)
 			p.GetErrorHandler().Sync(p)
 			_la = p.GetTokenStream().LA(1)
 		}
 		{
-			p.SetState(34)
-			p.Match(JsonParserT__3)
+			p.SetState(32)
+			p.Match(JsonParserT__2)
 		}
 
 	}
@@ -640,54 +626,51 @@ func (p *JsonParser) Array() (localctx IArrayContext) {
 		}
 	}()
 
-	p.SetState(51)
+	p.SetState(49)
 	p.GetErrorHandler().Sync(p)
 	switch p.GetInterpreter().AdaptivePredict(p.GetTokenStream(), 4, p.GetParserRuleContext()) {
 	case 1:
 		p.EnterOuterAlt(localctx, 1)
 		{
-			p.SetState(38)
+			p.SetState(36)
+			p.Match(JsonParserT__4)
+		}
+		{
+			p.SetState(37)
 			p.Match(JsonParserT__5)
 		}
 
 	case 2:
 		p.EnterOuterAlt(localctx, 2)
 		{
-			p.SetState(39)
-			p.Match(JsonParserT__6)
+			p.SetState(38)
+			p.Match(JsonParserT__4)
 		}
 		{
-			p.SetState(40)
+			p.SetState(39)
 			p.Value()
 		}
-		{
-			p.SetState(41)
-			p.Match(JsonParserT__7)
-		}
-
-	case 3:
-		p.EnterOuterAlt(localctx, 3)
-		{
-			p.SetState(43)
-			p.Match(JsonParserT__6)
-		}
-		p.SetState(45)
+		p.SetState(44)
 		p.GetErrorHandler().Sync(p)
 		_la = p.GetTokenStream().LA(1)
 
-		for ok := true; ok; ok = (((_la)&-(0x1f+1)) == 0 && ((1<<uint(_la))&((1<<JsonParserT__1)|(1<<JsonParserT__2)|(1<<JsonParserT__5)|(1<<JsonParserT__6)|(1<<JsonParserKey)|(1<<JsonParserStr)|(1<<JsonParserInt))) != 0) {
+		for _la == JsonParserT__3 {
 			{
-				p.SetState(44)
+				p.SetState(40)
+				p.Match(JsonParserT__3)
+			}
+			{
+				p.SetState(41)
 				p.Value()
 			}
 
-			p.SetState(47)
+			p.SetState(46)
 			p.GetErrorHandler().Sync(p)
 			_la = p.GetTokenStream().LA(1)
 		}
 		{
-			p.SetState(49)
-			p.Match(JsonParserT__7)
+			p.SetState(47)
+			p.Match(JsonParserT__5)
 		}
 
 	}
@@ -793,21 +776,21 @@ func (p *JsonParser) Init() (localctx IInitContext) {
 		}
 	}()
 
-	p.SetState(55)
+	p.SetState(53)
 	p.GetErrorHandler().Sync(p)
 
 	switch p.GetTokenStream().LA(1) {
-	case JsonParserT__5, JsonParserT__6:
+	case JsonParserT__4:
 		p.EnterOuterAlt(localctx, 1)
 		{
-			p.SetState(53)
+			p.SetState(51)
 			p.Array()
 		}
 
-	case JsonParserT__1, JsonParserT__2:
+	case JsonParserT__1:
 		p.EnterOuterAlt(localctx, 2)
 		{
-			p.SetState(54)
+			p.SetState(52)
 			p.Object()
 		}
 
