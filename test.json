@@ -1,22 +1,19 @@
-{
-  "glossary": {
-    "title": "example glossary",
-    "GlossDiv": {
-      "title": "S",
-      "GlossList": {
-        "GlossEntry": {
-          "ID": "SGML",
-          "SortAs": "SGML",
-          "GlossTerm": "Standard Generalized Markup Language",
-          "Acronym": "SGML",
-          "Abbrev": "ISO 8879:1986",
-          "GlossDef": {
-            "para": "A #$%%^&*())_meta-markup language, used to create markup languages such as DocBook.",
-            "GlossSeeAlso": ["GML", "XML"]
-          },
-          "GlossSee": "markup"
-        }
-      }
-    }
+[
+  {
+  "name": "lis\"i'",
+  "age": 18,
+  "agend": "men",
+  "habbit": [
+    "baskteball","pingp\"ang"
+  ]
+},
+  [1,2,3],
+  123,
+  "hh",
+  true,
+  false,
+  null,
+  {
+    "company": "songguo"
   }
-}
+]

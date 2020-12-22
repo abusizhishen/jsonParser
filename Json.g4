@@ -1,28 +1,36 @@
 grammar Json;
 
-DQM: '"'; //DoubleQuotationMarks
-Key : DQM[a-zA-Z_]+DQM;
-Str : DQM .*? DQM;
-Int : [0-9]+;
+String : '"' ([a-zA-Z0-9\\" '])* '"';
+Number : [0-9]+;
 WS :[\t\r\n ]+  ->skip;
+True:'true';
+False:'false';
+Null:'null';
 
-value :Int
-      |Key
-      |Str
+bool:True|False;
+value :
+    Number
+      |String
       |array
       |object
+      |bool
+      |Null
+        ;
+
+pair:
+    String ':' value;
+
+object :
+    '{' '}'
+    |'{' pair (','pair)* '}'
 ;
 
-pair: Str ':' value;
-
-object : '{' '}'
-    |'{'pair(','pair)*'}'
-;
-
-array:'[' ']'
+array:
+    '[' ']'
     |'[' value (','value)*']'
     ;
 
-init : array
+init :
+    array
     |object;
 

@@ -7,6 +7,16 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface JsonListener extends ParseTreeListener {
 	/**
+	 * Enter a parse tree produced by {@link JsonParser#bool}.
+	 * @param ctx the parse tree
+	 */
+	void enterBool(JsonParser.BoolContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link JsonParser#bool}.
+	 * @param ctx the parse tree
+	 */
+	void exitBool(JsonParser.BoolContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link JsonParser#value}.
 	 * @param ctx the parse tree
 	 */
