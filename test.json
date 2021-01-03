@@ -1,19 +1,24 @@
 [
   {
-  "name": "lis\"i'",
-  "age": 18,
-  "agend": "men",
-  "habbit": [
-    "baskteball","pingp\"ang"
-  ]
-},
-  [1,2,3],
+    "name":"lisa",
+    "age": 18,
+    "agend":"men",
+    "habbit":[
+      "basketball",
+      "pingpong"
+    ]
+  },
+  [
+    1,
+    2,
+    3
+  ],
   123,
   "hh",
   true,
   false,
   null,
   {
-    "company": "songguo"
+    "company":"songguo"
   }
 ]

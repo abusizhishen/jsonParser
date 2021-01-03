@@ -1,4 +1,4 @@
-// Code generated from Json.g4 by ANTLR 4.8. DO NOT EDIT.
+// Code generated from Json.g4 by ANTLR 4.7.2. DO NOT EDIT.
 
 package parser // Json
 
@@ -8,8 +8,26 @@ import "github.com/antlr/antlr4/runtime/Go/antlr"
 type JsonListener interface {
 	antlr.ParseTreeListener
 
-	// EnterValue is called when entering the value production.
-	EnterValue(c *ValueContext)
+	// EnterNumber is called when entering the number production.
+	EnterNumber(c *NumberContext)
+
+	// EnterNUMBER is called when entering the NUMBER production.
+	EnterNUMBER(c *NUMBERContext)
+
+	// EnterSTRING is called when entering the STRING production.
+	EnterSTRING(c *STRINGContext)
+
+	// EnterBOOL is called when entering the BOOL production.
+	EnterBOOL(c *BOOLContext)
+
+	// EnterNULL is called when entering the NULL production.
+	EnterNULL(c *NULLContext)
+
+	// EnterARRAY is called when entering the ARRAY production.
+	EnterARRAY(c *ARRAYContext)
+
+	// EnterOBJECT is called when entering the OBJECT production.
+	EnterOBJECT(c *OBJECTContext)
 
 	// EnterPair is called when entering the pair production.
 	EnterPair(c *PairContext)
@@ -20,11 +38,29 @@ type JsonListener interface {
 	// EnterArray is called when entering the array production.
 	EnterArray(c *ArrayContext)
 
-	// EnterInit is called when entering the init production.
-	EnterInit(c *InitContext)
+	// EnterJson is called when entering the json production.
+	EnterJson(c *JsonContext)
 
-	// ExitValue is called when exiting the value production.
-	ExitValue(c *ValueContext)
+	// ExitNumber is called when exiting the number production.
+	ExitNumber(c *NumberContext)
+
+	// ExitNUMBER is called when exiting the NUMBER production.
+	ExitNUMBER(c *NUMBERContext)
+
+	// ExitSTRING is called when exiting the STRING production.
+	ExitSTRING(c *STRINGContext)
+
+	// ExitBOOL is called when exiting the BOOL production.
+	ExitBOOL(c *BOOLContext)
+
+	// ExitNULL is called when exiting the NULL production.
+	ExitNULL(c *NULLContext)
+
+	// ExitARRAY is called when exiting the ARRAY production.
+	ExitARRAY(c *ARRAYContext)
+
+	// ExitOBJECT is called when exiting the OBJECT production.
+	ExitOBJECT(c *OBJECTContext)
 
 	// ExitPair is called when exiting the pair production.
 	ExitPair(c *PairContext)
@@ -35,6 +71,6 @@ type JsonListener interface {
 	// ExitArray is called when exiting the array production.
 	ExitArray(c *ArrayContext)
 
-	// ExitInit is called when exiting the init production.
-	ExitInit(c *InitContext)
+	// ExitJson is called when exiting the json production.
+	ExitJson(c *JsonContext)
 }
