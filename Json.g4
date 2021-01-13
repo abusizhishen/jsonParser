@@ -36,6 +36,6 @@ array
     ;
 
 json
-    :object
-    |array
+    :object # OBJ
+    |array # ARR
     ;

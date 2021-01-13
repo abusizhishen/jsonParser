@@ -1,6 +1,9 @@
-package main
+package src
 
-import "github.com/abusizhishen/jsonParser/parser"
+import (
+	"fmt"
+	"github.com/abusizhishen/jsonParser/parser"
+)
 
 type JsonListener struct {
 	*parser.BaseJsonListener
@@ -25,11 +28,11 @@ func (l *JsonListener)push(s string){
 }
 
 func (l *JsonListener)ExitARRAY(ctx *parser.ARRAYContext)  {
-
+	fmt.Println(ctx.GetText())
 }
 
 func (l *JsonListener)ExitOBJECT(ctx *parser.OBJECTContext)  {
-
+	fmt.Println(ctx.GetText())
 }
 
 func (l *JsonListener)ExitPair(ctx *parser.PairContext)  {
@@ -54,7 +57,7 @@ func (l *JsonListener)ExitSTRING(ctx *parser.STRINGContext)  {
 }
 
 func (l *JsonListener)ExitBOOL(ctx *parser.BOOLContext)  {
-
+	fmt.Println(ctx.GetText())
 }
 
 func (l *JsonListener)ExitNULL(ctx *parser.NULLContext)  {

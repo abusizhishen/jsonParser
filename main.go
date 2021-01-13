@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/abusizhishen/jsonParser/parser"
+	"github.com/abusizhishen/jsonParser/src"
 	"github.com/antlr/antlr4/runtime/Go/antlr"
 )
 
@@ -18,9 +19,5 @@ func main() {
 	p := parser.NewJsonParser(tokens)
 	p.BuildParseTrees = true
 
-	antlr.ParseTreeWalkerDefault.Walk(jsonListener{}, p.Json())
-}
-
-type jsonListener struct {
-	*parser.BaseJsonListener
+	antlr.ParseTreeWalkerDefault.Walk(&src.JsonListener{}, p.Json())
 }
