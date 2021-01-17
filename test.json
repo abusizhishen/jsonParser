@@ -1,6 +1,5 @@
 {
-  "name": "whw",
+  "name": "lisa",
   "age": 18,
-  "man": false,
-  "wife": null
+  "remark": ["pingpang","basketball",[1,2,3],{"name": "lisi"}]
 }

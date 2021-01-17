@@ -1,27 +1,15 @@
-// Code generated from Json.g4 by ANTLR 4.7.2. DO NOT EDIT.
+// Code generated from json.g4 by ANTLR 4.7.2. DO NOT EDIT.
 
-package parser // Json
+package parser // json
 
 import "github.com/antlr/antlr4/runtime/Go/antlr"
 
-// JsonListener is a complete listener for a parse tree produced by JsonParser.
-type JsonListener interface {
+// jsonListener is a complete listener for a parse tree produced by jsonParser.
+type jsonListener interface {
 	antlr.ParseTreeListener
 
-	// EnterNumber is called when entering the number production.
-	EnterNumber(c *NumberContext)
-
-	// EnterNUMBER is called when entering the NUMBER production.
-	EnterNUMBER(c *NUMBERContext)
-
-	// EnterSTRING is called when entering the STRING production.
-	EnterSTRING(c *STRINGContext)
-
-	// EnterBOOL is called when entering the BOOL production.
-	EnterBOOL(c *BOOLContext)
-
-	// EnterNULL is called when entering the NULL production.
-	EnterNULL(c *NULLContext)
+	// EnterSingleValue is called when entering the SingleValue production.
+	EnterSingleValue(c *SingleValueContext)
 
 	// EnterARRAY is called when entering the ARRAY production.
 	EnterARRAY(c *ARRAYContext)
@@ -41,20 +29,8 @@ type JsonListener interface {
 	// EnterJson is called when entering the json production.
 	EnterJson(c *JsonContext)
 
-	// ExitNumber is called when exiting the number production.
-	ExitNumber(c *NumberContext)
-
-	// ExitNUMBER is called when exiting the NUMBER production.
-	ExitNUMBER(c *NUMBERContext)
-
-	// ExitSTRING is called when exiting the STRING production.
-	ExitSTRING(c *STRINGContext)
-
-	// ExitBOOL is called when exiting the BOOL production.
-	ExitBOOL(c *BOOLContext)
-
-	// ExitNULL is called when exiting the NULL production.
-	ExitNULL(c *NULLContext)
+	// ExitSingleValue is called when exiting the SingleValue production.
+	ExitSingleValue(c *SingleValueContext)
 
 	// ExitARRAY is called when exiting the ARRAY production.
 	ExitARRAY(c *ARRAYContext)
